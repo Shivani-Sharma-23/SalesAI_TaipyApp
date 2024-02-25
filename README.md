@@ -1,2 +1,2 @@
-# GoRide
-Get your Ride at your Doorstep 🚓
+# SalesAi
+Your AI Sales Manager
