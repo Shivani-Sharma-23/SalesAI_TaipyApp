@@ -4,7 +4,7 @@ Your AI Sales Manager
 
 ## Overview
 
-This Sales Analysis app is designed to provide insights and analysis of sales data using Python. It utilizes the Taipy library for data manipulation and analysis. The app allows users to perform various analytical tasks such as:
+This Sales Analysis app is designed to provide insights and analysis of sales data using Python. It utilizes the Taipy library for creating an interactive Dashboard. The app allows users to perform various analytical tasks such as:
 
 - Analyzing sales trends over time
 - Visualizing sales data with interactive charts and graphs
@@ -30,5 +30,5 @@ pip install taipy pandas matplotlib numpy
 ```
 ## For reference:
 The app is going to look like this:
-#### AN Interactive Sales Dashboard
+#### An Interactive Sales Dashboard
 ![Dashboard](https://github.com/Shivani-Sharma-23/SalesAI_TaipyApp/blob/main/Sales_dashboard.png)
