@@ -1,6 +1,9 @@
 # SalesAi 🤖🧑‍💼
 Your AI Sales Manager
 
+## APPLICATION PREVIEW:
+https://github.com/Shivani-Sharma-23/SalesAI_TaipyApp/assets/112687652/82f5716f-71ad-432f-9f24-8a1c70966783
+### STILL IN PROGRESS 🦾
 
 ## Overview
 
@@ -8,12 +11,8 @@ This Sales Analysis app is designed to provide insights and analysis of sales da
 
 - Analyzing sales trends over time
 - Visualizing sales data with interactive charts and graphs
-- Calculating key performance metrics such as revenue, profit, and customer acquisition
 
 The app is designed to be user-friendly and customizable, allowing users to easily explore their sales data and gain actionable insights.
-## APPLICATION PREVIEW:
-https://github.com/Shivani-Sharma-23/SalesAI_TaipyApp/assets/112687652/82f5716f-71ad-432f-9f24-8a1c70966783
-### STILL IN PROGRESS 🦾
 
 ## Features
 
