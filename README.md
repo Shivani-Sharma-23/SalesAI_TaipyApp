@@ -8,7 +8,6 @@ This Sales Analysis app is designed to provide insights and analysis of sales da
 - Analyzing sales trends over time
 - Visualizing sales data with interactive charts and graphs
 
-
 The app is designed to be user-friendly and customizable, allowing users to easily explore their sales data and gain actionable insights.
 
 ## Features
