@@ -2,7 +2,6 @@ from taipy.gui import Gui, Markdown, State, notify
 import numpy as np 
 import pandas as pd 
 import matplotlib.pyplot as plt
-%matplotlib inline
 import seaborn as sns
 
 df = pd.read_csv('Diwali Sales Data.csv', encoding= 'unicode_escape')
@@ -125,7 +124,7 @@ def button_pressed(state):
     state.t = scenario.t.read()
 
 if __name__ == "__main__":
-    df2 = filter(states, occus) 
+    df2 = filter(states, occus)
     total_market_cap = int(df["Amount"].sum())
     page = page.replace("<|{int(df2['Amount'].sum())}|>", f"<|{total_market_cap}|>")
     
