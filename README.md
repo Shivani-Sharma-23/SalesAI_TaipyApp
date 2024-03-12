@@ -14,6 +14,13 @@ The app is designed to be user-friendly and customizable, allowing users to easi
 
 ![SalesAI](https://github.com/Shivani-Sharma-23/SalesAI_TaipyApp/assets/112687652/b10a8b75-face-4d70-b88b-5e166e2f3301)
 
+## Dependencies
+
+- Pandas
+- Numpy
+- Seaborn
+- Matplotlib
+-  [Taipy](https://www.taipy.io/)
 ## Installation
 
 To use this Sales Analysis app, you need to have Python installed on your system. You can install the required dependencies using pip:
