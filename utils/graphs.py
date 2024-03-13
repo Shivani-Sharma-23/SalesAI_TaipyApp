@@ -1,8 +1,8 @@
 import random
 import pandas as pd
 
-Diwali_data = pd.read_csv('Diwali Sales Data.csv')
-data = pd.DataFrame(Diwali_data)
+data = pd.read_csv('DataSet\Diwali Sales Data.csv', encoding= 'unicode_escape')
+
 
 
 # Overlayed chart
@@ -13,7 +13,7 @@ def chart(occu):
    return chart_data, ["States", "Zone", "Product_cat"], {"stackgroup": "first_group"}
 
 #Pie chart
-def pie_chart(states):
+def PieChart(states):
    dataframe = data
    States = dataframe[dataframe['State'] == states]
    Order = States.groupby('Occupation')['Orders'].sum().reset_index()
@@ -41,7 +41,8 @@ def BubbleChart():
     design = {"title": 'Bubble Chart: Orders by Occupation and State',"xaxis": dict(title='Occupation'),"yaxis": dict(title='State'),} 
     return bubble_data, marker, design
 
-def treemap_whole():
+# TreeMap
+def TreeMap():
     dataframe = data
     zone_orders = dataframe.groupby('Zone')['Orders'].sum().reset_index()
     data_zone = zone_orders.groupby('Zone')['Orders'].sum().reset_index()
@@ -60,6 +61,6 @@ def treemap_whole():
             labels.append(state_name)
             parents.append(zone_name)
             values.append(state_row['Orders'])
-    data = {"label": labels, "parents": parents, "values": values}
-    layout = {"title": "Zones and States by Total Orders"}
-    return data, layout
+    tree_data = {"label": labels, "parents": parents, "values": values}
+    design = {"title": "Zones and States by Total Orders"}
+    return tree_data, design
