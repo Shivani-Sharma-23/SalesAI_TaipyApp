@@ -1,6 +1,6 @@
 import pandas as pd
 from taipy.gui import Markdown
-from utils.graphs import chart, PieChart, BarGraph, BubbleChart, TreeMap
+from graphs.graphs import chart, PieChart, BarGraph, BubbleChart, TreeMap
 
 data = pd.read_csv('DataSet\Diwali Sales Data.csv', encoding= 'unicode_escape')
 
