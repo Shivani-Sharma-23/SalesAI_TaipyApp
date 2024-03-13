@@ -116,12 +116,6 @@ Rs. <|{int(df['Amount'].sum())}|>
 |>
 """
 
-def button_pressed(state):
-    state.scenario.number_of_products_sold.submit(wait=True)
-    state.scenario.amount_of_one_product.submit(wait=True)
-    state.scenario.Cost_of.submit(wait=True)
-    t = number_of_products_sold * amount_of_one_product - Cost_of * number_of_products_sold
-    state.t = scenario.t.read()
 
 if __name__ == "__main__":
     df2 = filter(states, occus)
