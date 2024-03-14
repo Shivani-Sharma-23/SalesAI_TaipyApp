@@ -34,4 +34,4 @@ pie_data = PieChart(states)
 bubble_data, bubble_marker, bubble_design = BubbleChart()
 tree_data =TreeMap()
 
-dashboard_ui = Markdown("pages/dashboard/dashboard_ui.md")
+dashboard_ui = Markdown("web_pages/dashboard/dashboard_ui.md")
