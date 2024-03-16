@@ -1,51 +1,73 @@
 import random
 import pandas as pd
 
-data = pd.read_csv('DataSet\Diwali Sales Data.csv', encoding= 'unicode_escape')
-
-
+data = pd.read_csv('DataSet\Diwali Sales Data.csv', encoding= 'latin1')
 
 
 # Overlayed chart
 def chart(occu):
-   dataframe = data
-   Occupation = dataframe[dataframe['Occupation'] == occu]
+   Occupation = data[data['Occupation'] == occu]
    chart_data= {"States": Occupation['State'].to_list(),"Zone": Occupation['Zone'].to_list(),"Product_cat": Occupation['Product_Category'].to_list(),}
    return chart_data, ["States", "Zone", "Product_cat"], {"stackgroup": "first_group"}
 
 #Pie chart
 def PieChart(states):
-   dataframe = data
-   States = dataframe[dataframe['State'] == states]
+   States = data[data['State'] == states]
    Order = States.groupby('Occupation')['Orders'].sum().reset_index()
    pie_data= {"values": Order['Orders'].to_list(),"labels": Order['Occupation'].to_list()}
    return pie_data
 
 # bar graph
-def BarGraph(occu):
-   dataframe = data
-   bar_data = dataframe[dataframe['Occupation'] ==occu]
-   bar_data = bar_data.reset_index(drop=True)
-   bar_data = bar_data.groupby('Occupation')['Orders'].sum().reset_index()
-   design = {"title": f'Orders {occu}',"xaxis": dict(title='Occupation'), "yaxis": dict(title='Orders'),"barmode": 'group'}
-   return bar_data, design
+def BarGraph():
+   grouped_data = data.groupby('Occupation', as_index=False).agg({
+       'Orders': 'sum'
+   })
+
+   layout = {
+       "title": 'Total Orders per Occupation',
+       "xaxis": dict(title='Occupation'),
+       "yaxis": dict(title='Orders'),
+       "barmode": 'group'
+   }
+   return grouped_data, layout
 
 #BubbleChart
 def BubbleChart():
-    Occupation_State = data.groupby(['Occupation', 'State']).agg({
-        'Orders': 'sum'
+    # Grouping data by Age and calculating total Orders and Amount for each Age group
+    Age_Group = data.groupby('Age').agg({
+        'Orders': 'sum',
+        'Amount': 'sum'
     }).reset_index()
-    factor = 0.0001
-    size = Occupation_State['Orders'] * factor
-    bubble_data = {"x": Occupation_State['Occupation'].to_list(),"y": Occupation_State['State'].to_list(),"text": Occupation_State['Occupation'].to_list(),}
-    marker = {"size": size.to_list(),"color": Occupation_State['Orders'].to_list(),"colorscale": "plasma",}
-    design = {"title": 'Bubble Chart: Orders by Occupation and State',"xaxis": dict(title='Occupation'),"yaxis": dict(title='State'),} 
+    
+    # Prepare data for the bubble chart
+    bubble_data = {
+        "x": Age_Group['Age'],  # X-axis: Age
+        "y": Age_Group['Amount'],  # Y-axis: Amount
+        "text": Age_Group['Age'],  # Text for hover-over
+    }
+    
+    # Bubble size representing the number of Orders
+    size = Age_Group['Orders']
+    
+    # Marker settings for the bubble chart
+    marker = {
+        "size": size,  # Bubble size
+        "color": Age_Group['Orders'],  # Color based on number of Orders
+        "colorscale": "plasma",  # Color scale
+    }
+    
+    # Design settings for the bubble chart
+    design = {
+        "title": 'Bubble Chart: Sales by Age',
+        "xaxis": {"title": 'Age'},  # X-axis label
+        "yaxis": {"title": 'Amount'},  # Y-axis label
+    }
+    
     return bubble_data, marker, design
 
 # TreeMap
 def TreeMap():
-    dataframe = data
-    zone_orders = dataframe.groupby('Zone')['Orders'].sum().reset_index()
+    zone_orders = data.groupby('Zone')['Orders'].sum().reset_index()
     data_zone = zone_orders.groupby('Zone')['Orders'].sum().reset_index()
     data_zone = data_zone.sort_values(by='Orders', ascending=False)
     labels = []
@@ -56,7 +78,7 @@ def TreeMap():
         labels.append(zone_name)
         parents.append("")
         values.append(row['Orders'])
-        state_orders = dataframe[dataframe['Zone'] == zone_name].groupby('State')['Orders'].sum().reset_index()
+        state_orders = data[data['Zone'] == zone_name].groupby('State')['Orders'].sum().reset_index()
         for _, state_row in state_orders.iterrows():
             state_name = state_row['State']
             labels.append(state_name)

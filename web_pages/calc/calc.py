@@ -60,7 +60,7 @@ calc_ui = """<hr/>
 ####  **Amount of One Product**:
 <|{amt_one_pro}|number|>
 <br/>
-<|Add to Income!|button|on_action=generate_amt|>
+<|Add|button|on_action=generate_amt|>
 <|Clear|button|class_name=blueButton|on_action=clear_out2|>
 |amount>
 
@@ -68,7 +68,7 @@ calc_ui = """<hr/>
 #### **Cost of making one Product**:
 <|{cost_of_making_one_p}|number|>
 <br/>
-<|Add to Income!|button|on_action=generate_cst_one|>
+<|Add|button|on_action=generate_cst_one|>
 <|Clear|button|class_name=blueButton|on_action=clear_out3|>
 |amount_p>
 |>
