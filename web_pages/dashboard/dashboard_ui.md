@@ -1,6 +1,5 @@
-<|layout|columns=1 1|
 <|{occu}|selector|lov={occupation}|on_change=on_change_Occu|dropdown|class_name=m1|>
-|>
+
 <br/>
 
 <|card|

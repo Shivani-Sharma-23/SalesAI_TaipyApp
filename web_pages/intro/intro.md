@@ -5,6 +5,6 @@
 |>
 
 <|card|
-<|{path}|image|>
+![alt text](logo-1.png)
 |>
 |>
