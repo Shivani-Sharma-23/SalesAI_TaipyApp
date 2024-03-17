@@ -13,6 +13,38 @@ The app is designed to be user-friendly and customizable, allowing users to easi
 ## Features
 
 ![SalesAI](https://github.com/Shivani-Sharma-23/SalesAI_TaipyApp/assets/112687652/b10a8b75-face-4d70-b88b-5e166e2f3301)
+### About Us Page:
+UI of About us Page <br/>
+<br/>
+
+https://github.com/Shivani-Sharma-23/SalesAI_TaipyApp/assets/112687652/a214fc91-9a66-4cf6-9a33-5824ea2d862b
+
+
+### Profit Calculator:
+Easily assess profitability with our intuitive profit calculator feature.<br/>
+  UI of Calculator Page <br/>
+<br/>
+
+
+https://github.com/Shivani-Sharma-23/SalesAI_TaipyApp/assets/112687652/f58f2546-e6f8-49ba-ae94-dd762b2b6b48
+
+
+### Dashboard:
+Gain comprehensive insights at a glance with our dynamic dashboard.<br/>
+UI of Dashboard Page <br/>
+<br/>
+
+
+https://github.com/Shivani-Sharma-23/SalesAI_TaipyApp/assets/112687652/a44701fc-0479-4fa9-a2cf-7b09f417dd62
+
+
+### Sales Bot:
+Streamline customer interactions and boost sales efficiency with our AI-powered sales bot. Engage prospects, provide instant support, and automate repetitive tasks to drive conversions and enhance customer satisfaction.<br/>
+UI of Sales Bot Page <br/>
+<br/>
+
+![SalesBot_page](https://github.com/Shivani-Sharma-23/SalesAI_TaipyApp/assets/112687652/d27043cd-c8ba-4f0a-84ff-9ef4ee30c02d)
+
 
 ## Dependencies
 
