@@ -187,7 +187,7 @@ bot_ui = """
  
 if __name__ == "__main__":
     if "OPENAI_API_KEY" in os.environ:
-        api_key = "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"
+        api_key = ""
     elif len(sys.argv) > 1:
         api_key = sys.argv[1]
     else:
