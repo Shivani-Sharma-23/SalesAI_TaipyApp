@@ -1,4 +1,7 @@
 from taipy.gui import Gui
+import openai
+import os
+import sys
 from web_pages.calc.calc import calc_ui
 from web_pages.dashboard.dashboard import dashboard_ui
 from web_pages.intro.intro import intro_ui
@@ -12,6 +15,7 @@ pages = {
 }
 
 if __name__ == "__main__":
+
     Gui(pages=pages).run(
         title="SalesAI",
         favicon="logo.png",
