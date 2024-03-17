@@ -1,11 +1,5 @@
 # SalesAi 🤖🧑‍💼
-"Your AI Sales Manager"
-
-## APPLICATION PREVIEW:
-
-
-
-https://github.com/Shivani-Sharma-23/SalesAI_TaipyApp/assets/112687652/13a014ed-a1f4-49c6-ae9d-eecad9e3c8a7
+## " Your AI Sales Manager "
 
 ## Overview
 This Sales Analysis app is designed to provide insights and analysis of sales data using Python. It utilizes the `taipy` library for creating an interactive Dashboard. The app allows users to perform various analytical tasks such as:
@@ -72,6 +66,11 @@ To use this Sales Analysis app, you need to have Python installed on your system
 pip install taipy pandas matplotlib numpy
 ```
 
+## APPLICATION PREVIEW:
+
+
+
+https://github.com/Shivani-Sharma-23/SalesAI_TaipyApp/assets/112687652/13a014ed-a1f4-49c6-ae9d-eecad9e3c8a7
 ## Acknowledgments
 
 This project utilizes the `taipy` library for building the interactive dashboard.
