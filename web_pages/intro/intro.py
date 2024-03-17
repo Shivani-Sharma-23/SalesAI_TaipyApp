@@ -1,3 +1,3 @@
-from taipy.gui import Markdown
-path = "logo-1.png"
+from taipy.gui import Gui,Markdown
+path = 'logo.png'
 intro_ui = Markdown("web_pages/intro/intro.md")

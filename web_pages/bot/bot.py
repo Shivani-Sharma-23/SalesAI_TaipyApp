@@ -167,10 +167,10 @@ def select_conv(state: State, var_name: str, value) -> None:
 
 past_prompts = []
 
-page = """
+bot_ui = """
 <|layout|columns=300px 1|
 <|part|render=True|class_name=sidebar|
-# Taipy *Chat*{: .color-primary} # {: .logo-text}
+# Sales *Bot*{: .color-primary} # {: .logo-text}
 <|New Conversation|button|class_name=fullwidth plain|id=reset_app_button|on_action=reset_chat|>
 ### Previous activities ### {: .h5 .mt2 .mb-half}
 <|{selected_conv}|tree|lov={past_conversations}|class_name=past_prompts_list|multiple|adapter=tree_adapter|on_change=select_conv|>
@@ -184,4 +184,5 @@ page = """
 |>
 |>
 """
+
 

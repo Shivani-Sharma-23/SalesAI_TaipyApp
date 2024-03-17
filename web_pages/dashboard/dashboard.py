@@ -1,6 +1,6 @@
 import pandas as pd
 from taipy.gui import Markdown
-from graphs.graphs import chart, PieChart, BarGraph, BubbleChart, TreeMap
+from graphs.graphs import PieChart, BarGraph
 
 data = pd.read_csv('DataSet\Diwali Sales Data.csv', encoding= 'latin1')
 
@@ -28,9 +28,7 @@ states = state[0]
 Orders = Stats(occu)
 
 bar_data, bar_design = BarGraph()
-overlay_data, y_labels, options = chart(occu)
 pie_data = PieChart(states)
-bubble_data, bubble_marker, bubble_design = BubbleChart()
-tree_data =TreeMap()
+
 
 dashboard_ui = Markdown("web_pages/dashboard/dashboard_ui.md")

@@ -45,38 +45,49 @@ def net_amount(prod,amt,cost):
     return net_amount
 
 
-calc_ui = """<hr/>
-# **SALES CALCULATOR**{: style="color: #AD88C6"}
+calc_ui = """
+<h1><div style="text-align: center;">
+<span style="color: #B7C9F2;">SALES CALCULATOR</span>
+</div></h1>
 <|1 1 1 |layout|
+<|card|
 <total_Product|
 #### **Number of products sold**:
 <|{no_of_prod}|number|>
 <br/>
+<br/>
 <|Add|button|on_action=add_pro|>
 <|Clear|button|class_name=blueButton|on_action=clear_out1|>
 |total_Product>
+|>
 
+<|card|
 <amount|
 ####  **Amount of One Product**:
 <|{amt_one_pro}|number|>
 <br/>
+<br/>
 <|Add|button|on_action=generate_amt|>
 <|Clear|button|class_name=blueButton|on_action=clear_out2|>
 |amount>
+|>
 
+<|card|
 <amount_p|
 #### **Cost of making one Product**:
 <|{cost_of_making_one_p}|number|>
+<br/>
 <br/>
 <|Add|button|on_action=generate_cst_one|>
 <|Clear|button|class_name=blueButton|on_action=clear_out3|>
 |amount_p>
 |>
-
+|>
 
 <br/>
+<|card|
 <|text-center |
 ##**TOTAL SALE:**
 <|Calculate|button|on_action=calculate|>
->
+|>
 """
