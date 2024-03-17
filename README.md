@@ -1,6 +1,11 @@
 # SalesAi 🤖🧑‍💼
-Your AI Sales Manager
+"Your AI Sales Manager"
 
+## APPLICATION PREVIEW:
+
+
+
+https://github.com/Shivani-Sharma-23/SalesAI_TaipyApp/assets/112687652/13a014ed-a1f4-49c6-ae9d-eecad9e3c8a7
 
 ## Overview
 This Sales Analysis app is designed to provide insights and analysis of sales data using Python. It utilizes the `taipy` library for creating an interactive Dashboard. The app allows users to perform various analytical tasks such as:
@@ -26,7 +31,11 @@ Easily assess profitability with our intuitive profit calculator feature.<br/>
 <br/>
 
 
-https://github.com/Shivani-Sharma-23/SalesAI_TaipyApp/assets/112687652/f58f2546-e6f8-49ba-ae94-dd762b2b6b48
+https://github.com/Shivani-Sharma-23/SalesAI_TaipyApp/assets/112687652/ccf1642a-9347-43e2-a887-c845b4d9a8be
+
+
+
+
 
 
 ### Dashboard:
@@ -43,7 +52,9 @@ Streamline customer interactions and boost sales efficiency with our AI-powered 
 UI of Sales Bot Page <br/>
 <br/>
 
-![SalesBot_page](https://github.com/Shivani-Sharma-23/SalesAI_TaipyApp/assets/112687652/d27043cd-c8ba-4f0a-84ff-9ef4ee30c02d)
+![Bot_demo](https://github.com/Shivani-Sharma-23/SalesAI_TaipyApp/assets/112687652/78e5923a-4307-4592-bd14-017b50439c42)
+
+
 
 
 ## Dependencies
@@ -60,11 +71,6 @@ To use this Sales Analysis app, you need to have Python installed on your system
 ```bash
 pip install taipy pandas matplotlib numpy
 ```
-## APPLICATION PREVIEW:
-https://github.com/Shivani-Sharma-23/SalesAI_TaipyApp/assets/112687652/e692b6d8-76dc-4d29-a0b1-303b74cf4e9e
-
-NOTE - This is the prototype for the application.
-### DEVELOPMENT STILL IN PROGRESS 🦾
 
 ## Acknowledgments
 
