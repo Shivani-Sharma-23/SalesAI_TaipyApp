@@ -185,14 +185,3 @@ bot_ui = """
 |>
 """
  
-if __name__ == "__main__":
-    if "OPENAI_API_KEY" in os.environ:
-        api_key = ""
-    elif len(sys.argv) > 1:
-        api_key = sys.argv[1]
-    else:
-        raise ValueError(
-            "Please provide the OpenAI API key as an environment variable OPENAI_API_KEY or as a command line argument."
-        )
-
-    client = openai.Client(api_key=api_key)
