@@ -24,7 +24,7 @@ def on_init(state: State) -> None:
     """
     state.context = "The following is a conversation with an AI assistant. The assistant is helpful, creative, clever, and very friendly.\n\nHuman: Hello, who are you?\nAI: I am an AI created by OpenAI. How can I help you today? "
     state.conversation = {
-        "Conversation": ["Who are you?", "Hi! I am GPT-4. How can I help you today?"]
+        "Conversation": ["Who are you?", "Hi! I am AI Sales Manger. How can I help you today?"]
     }
     state.current_user_message = ""
     state.past_conversations = []

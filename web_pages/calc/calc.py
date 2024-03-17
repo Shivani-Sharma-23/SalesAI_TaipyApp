@@ -1,45 +1,31 @@
 from taipy.gui import Markdown
-
-def add_pro(state):
-    if state.no_of_prod != "":
-        with open("No_pro.txt", "a") as f:
-            f.write(state.no_of_prod)
-
-def generate_amt(state):
-    if state.amt_one_pro != "":
-        with open("Amt.txt", "a") as f:
-            f.write(state.amt_one_pro)
-
-def generate_cst_one(state):
-    if state.cost_of_making_one_p != "":
-        with open("cost_one.txt", "a") as f:
-            f.write(state.cost_of_making_one_p)
+no_of_prod = 0
+amt_one_pro= 0
+cost_of_making_one_p = 0
+net_amount = 0
 
 def clear_out1(state):
-    state.no_of_prod = ""
+    state.no_of_prod = 0
 
 def clear_out2(state):
-    state.amt_one_pro = ""
+    state.amt_one_pro = 0
 
 def clear_out3(state):
-    state.cost_of_making_one_p = ""
+    state.cost_of_making_one_p = 0
 
-def calculate(state):
-    with open("No_pro.txt", "r") as pro_file:
-        prod = float(pro_file.read().strip())
 
-    with open("Amt.txt", "r") as amt_file:
-        amt = float(amt_file.read().strip())
-    
-    with open("cost_one.txt", "r") as cost_file:
-        cost = float(cost_file.read().strip())
+def net_amt(state):
+   n = state.no_of_prod
+   a = state.amt_one_pro
+   c = state.cost_of_making_one_p
+   net_amount = (n * a) - (n * c)
+   state.net_amount = net_amount # Update the state variable
+   return net_amount
 
-    sum_all = net_amount(prod, amt, cost)
-    return sum_all
+def on_action(state, action):
+  if action == "net_amount":
+    net_amt(state)
 
-def net_amount(prod, amt, cost):
-    net_amount = prod * amt - (prod * cost)
-    return net_amount
 
 calc_ui = """
 <h1><div style="text-align: center;">
@@ -52,7 +38,6 @@ calc_ui = """
 <|{no_of_prod}|number|>
 <br/>
 <br/>
-<|Add|button|on_action=add_pro|>
 <|Clear|button|class_name=blueButton|on_action=clear_out1|>
 |total_Product>
 |>
@@ -63,7 +48,6 @@ calc_ui = """
 <|{amt_one_pro}|number|>
 <br/>
 <br/>
-<|Add|button|on_action=generate_amt|>
 <|Clear|button|class_name=blueButton|on_action=clear_out2|>
 |amount>
 |>
@@ -74,17 +58,21 @@ calc_ui = """
 <|{cost_of_making_one_p}|number|>
 <br/>
 <br/>
-<|Add|button|on_action=generate_cst_one|>
 <|Clear|button|class_name=blueButton|on_action=clear_out3|>
 |amount_p>
 |>
 |>
 
+
 <br/>
 <|card|
 <|text-center |
-##**TOTAL SALE:**
-<|Calculate|button|on_action=calculate|>
+##**TOTAL Earning From Product Sale:**
+<|{net_amount}|text|>
+
+<br/>
+<br/>
+<|Calculate|button|on_action=net_amt|>
 |>
 |>
 <hr/>

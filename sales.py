@@ -6,6 +6,8 @@ from web_pages.calc.calc import calc_ui
 from web_pages.dashboard.dashboard import dashboard_ui
 from web_pages.intro.intro import intro_ui
 from web_pages.bot.bot import bot_ui
+from web_pages.calc.calc import *
+from web_pages.bot.bot import *
 pages = {
     "/":" <|toggle|theme|> <|navbar|>",
     "AboutUs":intro_ui,
