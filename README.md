@@ -74,3 +74,7 @@ https://github.com/Shivani-Sharma-23/SalesAI_TaipyApp/assets/112687652/13a014ed-
 ## Acknowledgments
 
 This project utilizes the `taipy` library for building the interactive dashboard.
+
+## License
+
+This application is licensed under [MIT License](/LICENSE).
