@@ -1,115 +1,65 @@
-<|layout|columns=1 1|
+<|20 80|layout|
+<|sidebar|
+<|text-center |
+## <span style="color: #BED7DC;">Products</span>
+<|{SalesAI}|button|on_action=to_SalesAI|>
+
+<br/>
+
+<|{CryptoMate}|button|on_action=to_Crypto|>
+|>
+|>
+
+<|main_page |
+
+# <span style="color: #BED7DC;">SalesCrypto</span>
+
+### <span style="color: #BED7DC;">"Empower Your Sales Strategy, Unleash Crypto Insights."</span>
 <|card|
-# <span style="color: #B7C9F2;">SalesAI</span>
-<br/>
-
-### "Your Ai sales Manger"
-**SalesAI is a cutting-edge application designed to revolutionize sales management. At its core, SalesAI utilizes advanced algorithms to optimize profit based on sales data. Through its interactive dashboard, users gain invaluable insights and analysis, enabling informed decision-making. Moreover, SalesAI boasts a sophisticated sales chatbot acting as a virtual manager, providing real-time assistance and guidance to sales teams. This multifaceted approach ensures efficient sales operations, maximized profitability, and enhanced productivity.**
+SalesCrypto is an all-in-one application offering sales analysis tools, including a sales calculator and chatbot acting as a sales consultant. Additionally, it provides yearly cryptocurrency analysis with customizable filters for various cryptocurrencies , you can explore market trends, track price changes, and compare different cryptocurrencies effortlessly.
 |>
+
+# <span style="color: #BED7DC">Features :-</span>
+<|1 1 |layout|gap = 50px|
+
+<|text-center |
+
+<Features_one|
 
 <|card|
-![logo](logo.png)
-|>
+### Profit Calculator
+Easily assess your gains by inputting basic transaction details into our intuitive Profit Calculator feature. Instantly visualize your profits and make informed decisions to optimize your investment strategy.
 |>
 <br/>
-<br/>
-
-# <span style="color: #B7C9F2;">Features :-</span>
-<|layout|columns=1 1 1|
-<|card|
-![logo](calculator.png)
-#### Profit Calculator
-|>
 
 <|card|
-![logo](Dashboard.png)
-#### Interactive Dashboard
+### Filtering Options
+Tailor your cryptocurrency research with precision using our comprehensive filtering options. Narrow down your focus by symbol or name, empowering you to delve deeper into specific assets with ease.
 |>
 
+|Features_one>
+|>
+
+<|text-center |
+
+<features_two|
 
 <|card|
-![logo](Chatbot1.png)
-#### AI Sales Manager
-|>
+### Market Insights
+Gain valuable market insights with features like Total Market Cap and Average Price, providing real-time data on selected cryptocurrencies. Stay informed about market trends and fluctuations, enabling you to make timely and informed investment decisions.
 |>
 
-# <span style="color: #B7C9F2;">Sales: The Engine of Business Growth</span>
+<br/>
+
 <|card|
-Sales is the lifeblood of any business. It's the process of converting a prospect's interest into a purchase, ultimately generating revenue for the company. But it's not just about pushing products or services. Effective sales involve understanding customer needs, building trust, and providing solutions.
-
-* **The Process:**<br/>
-Identify leads, qualify them, showcase value, address concerns, negotiate, and close the deal.
-<br/>
-<br/>
-
-* **Key Skills:** <br/>
-Be a master communicator, build trust, know your product inside-out, solve customer problems, and be persistent (not pushy!).
-<br/>
-<br/>
-
-* **B2B vs. B2C:**<br/>
-Selling to businesses or directly to consumers requires different approaches.
-<br/>
-<br/>
-
-* **Inside vs. Outside:**<br/>
-Remote sales calls or face-to-face interactions depending on the role.
-<br/>
-<br/>
-
-* **Driving Success:**<br/>
-Sales fuel revenue growth, build customer loyalty, and provide valuable market insights.
-<br/>
-<br/>
-
-* **The Power of AI:**<br/>
-Automates tasks, personalizes interactions, predicts sales trends, and empowers salespeople. 
-<br/>
-<br/>
-
-* **Not a Replacement:**<br/>
-AI enhances human capabilities, making salespeople more efficient and effective. 
-<br/>
-<br/>
+### Interactive Analysis
+Dive into detailed cryptocurrency data through an interactive table and visualization tools. Engage with dynamic pie charts and explore comprehensive information to uncover trends, patterns, and opportunities within the crypto market. Effortlessly analyze data to make strategic investment moves.
 |>
 
-# <span style="color: #B7C9F2;">Sales Cycle :</span>
-<|card|
-![logo](salescycle.png)
+|features_two>
 |>
 
-# <span style="color: #B7C9F2;">What is AI full potential in sales?</span>
-<|card|
-* **Sales on steroids:**<br/>
-AI automates repetitive tasks, freeing up salespeople for strategic work.
-<br/>
-<br/>
+|>
+|>
 
-* **Smarter CRMs:**<br/>
-AI analyzes data to recommend ideal leads and next best actions.
-<br/>
-<br/>
-
-* **Personalized touch at scale:**<br/>
-AI tailors sales pitches, content, and even chatbots for individual customers.
-<br/>
-<br/>
-
-* **Predict the future:**<br/>
-AI forecasts sales trends, allowing smarter resource allocation and goal setting.
-<br/>
-<br/>
-
-* **AI coaches:**<br/>
-Salespeople receive real-time feedback and personalized training recommendations.
-<br/>
-<br/>
-
-* **Data-driven decisions:**<br/>
-AI analyzes customer data to identify ideal target markets and optimize pricing strategies.
-<br/>
-<br/>
-
-* **Human element remains key:**<br/>
-AI isn't here to replace salespeople, but to empower them with knowledge and efficiency.
 |>

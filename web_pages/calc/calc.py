@@ -27,7 +27,11 @@ def on_action(state, action):
     net_amt(state)
 
 
+navigation = [("/Dashboard", "Dashboard"),("/Calculator", "Calculator")]
+
+
 calc_ui = """
+<|navbar|lov={navigation}|>
 <h1><div style="text-align: center;">
 <span style="color: #B7C9F2;">SALES CALCULATOR</span>
 </div></h1>

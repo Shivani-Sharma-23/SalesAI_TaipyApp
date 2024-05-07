@@ -1,3 +1,4 @@
+<|navbar|lov={navigation}|>
 <|layout|columns=1 1|class_name=m2|
 <|card|
 <|{pie_data}|chart|type=pie|values=values|labels=labels|>

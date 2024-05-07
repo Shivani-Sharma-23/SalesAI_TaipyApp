@@ -4,6 +4,7 @@ from graphs.graphs import PieChart, BarGraph
 
 data = pd.read_csv('DataSet\Diwali Sales Data.csv', encoding= 'latin1')
 
+navigation = [("/Dashboard", "Dashboard"),("/Calculator", "Calculator")]
 
 def on_change_Occu(state):
 
